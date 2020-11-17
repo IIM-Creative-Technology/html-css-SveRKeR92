@@ -1,0 +1,281 @@
+:root{
+    --head-foot-bcg-color: rgb(0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+input, button {
+    outline: none;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black ;
+    transition: 0.2s;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--head-foot-bcg-color);
+}
+
+header .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header img {
+    width: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+header a{
+    color: white;
+    font-size: 20px;
+}
+
+.lookout-bckgrd{
+    background-color: rgb(100, 100, 100);
+}
+
+.lookout{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lookout * {
+    font-size: 20px;
+}
+
+.lookout input {
+    width: 80%;
+    padding: 5px;
+    margin-left: 15px;
+    background-color: transparent;
+    border: none;
+}
+
+.lookout input::placeholder{
+    color: black;
+    opacity: 0.7;
+}
+
+.lookout input:focus::placeholder{
+    opacity: 0;
+}
+
+.lookout i{
+    cursor: pointer;
+}
+
+main{
+    padding: 20px 5px;
+    padding-bottom: 100px;
+}
+
+main hr{
+    margin: 10px 0;
+    width: 70%;
+    background-color: rgb(180, 180, 180);
+    border: none;
+    height: 2px;
+}
+
+main h2{
+    text-transform: capitalize;
+    color: black;
+    text-shadow: rgb(180, 180, 180) 1px 0 10px;
+    font-size: 30px;
+}
+
+main .nav{
+    width: fit-content;
+    border: 1px solid rgba(100, 100, 100, 0.7);
+    padding: 20px;
+    display: none;
+}
+
+.navleft{
+    float: left;
+    margin-right: 50px;
+}
+
+.navright{
+    float: right;
+    margin-left: 50px;
+}
+
+.nav strong{
+    font-size: 30px;
+}
+
+ul{
+    list-style: none;
+}
+
+main h3, a{
+    color:  rgb(63, 141, 230);
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+main .table-accueil{
+    width: 90%;
+    margin: 0 auto 30px;
+}
+
+main table tr td > p {
+    font-size: 20px;
+}
+
+main table{
+    border-spacing: 10px;
+}
+
+.hundred {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(180, 180, 180);
+    justify-content: space-between;
+    padding-right: 5px;
+    font-weight: bold;
+    height: 40px;
+}
+
+.percent{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(63, 141, 230);
+    padding: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.percent p{
+    white-space:nowrap;
+	display:inline;
+}
+
+.p72{
+    width: 72%;
+}
+
+.p14{
+    width: 14%;
+}
+
+.p10 {
+    width: 10%;
+}
+
+.p4{
+    width: 4%;
+}
+
+main button{
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 100px;
+    border: none;
+    background-color: #6BCDFD;
+    font-size: 15px;
+    color: white;
+    display: block;
+    margin: auto;
+}
+
+main .table-lead{
+    margin: 10px auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.gold, .silver, .bronze{
+    text-shadow: 1px 1px 5px black;
+}
+
+.gold{
+    color: gold;
+}
+
+.silver{
+    color: silver;
+}
+
+.bronze{
+    color: #cd7f32;
+}
+
+footer div{
+    background-color: var(--head-foot-bcg-color);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+footer a{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+footer a i{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+footer a p{
+    font-size: 15px;
+}
+
+@media screen and (min-width: 1200px){
+    body > * > * {
+        width: 40%;
+        margin: auto;
+    }
+
+    footer div{
+        justify-content: space-evenly !important;
+    }
+
+    main .nav{
+        display: block;
+    }
+}
